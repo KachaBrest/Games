@@ -1,0 +1,159 @@
+body{
+    background-image: url("/template/image/pic.jpg");
+    background-size: cover;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+    margin: auto;
+    top: 30%;
+    position: relative;
+}
+
+.games_h2{
+    position: absolute;
+    top: 23%;
+    margin: auto 28%;
+}
+
+.games{
+    color: aliceblue;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.home{
+    display: flex;
+    height: 20%;
+}
+
+.col {
+    flex: 1 1 calc((100% / 3) - 2rem);
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menu {
+    display: grid;
+    height: 80vh;
+
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    z-index: 1;
+    margin: auto;
+}
+
+.btn:hover {
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.btn:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+}
+
+.accordion{
+    --bs-accordion-active-color: #c0c4c9d9;
+    --bs-accordion-active-bg: #642368;
+    --bs-accordion-btn-bg: #642368;
+    --bs-accordion-btn-color: #c0c4c9d9;
+    --bs-accordion-bg: #2c2b2bba;
+    --bs-accordion-color: #c0c4c9d9;
+}
+
+.btn-primary {
+    border-radius: 20px;
+    width: 40%;
+}
+
+.cabinet_logout{
+    margin: auto;
+    width: fit-content;
+}
+
+.cabinet_logout form{
+    margin: auto;
+    width: fit-content;
+}
+
+.btn-logout{
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background: linear-gradient(90deg, #2d3132, #bba6b1b0, #5503f4);
+}
+
+.btn-logout:hover{
+    background: linear-gradient(90deg, #a25da2, #bba6b1b0, #413b4e);
+}
+
+.info_post{
+    position: absolute;
+    right: 19%;
+    top: 1%;
+    font-size: 12px;
+}
+
+.info_table{
+    border: 1px solid #fdfdfd;
+    color: white;
+    font-size: 21px;
+    width: 50%;
+    height: max-content;
+    position: absolute;
+    margin: 10% 27%;
+    border-inline-style: none;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0.1px;
+    padding: 5px;
+}
